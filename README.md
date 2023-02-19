@@ -10,7 +10,7 @@ Provides set of libraries to easily setup code quality checks based on [GrumPHP]
 
 ## Install
 
-1. Add `mdarg1s/drupal-quality-checker` to `composer.json` (like [here](https://github.com/mdarg1s/modal_config/blob/8.x-1.x/composer.json#L21)) or just `composer require --dev mdarg1s/drupal-quality-checker`
+1. Add `mdarg1s/drupal-quality-checker` to `composer.json` or just `composer require --dev mdarg1s/drupal-quality-checker`
 2. Replace `grumphp.yml` in project's root directory (not Drupal root directory) with `vendor/mdarg1s/drupal-quality-checker/grumphp.yml.dist`
 
 That's it. Now, all tasks (listed below) run on every `git commit`.
