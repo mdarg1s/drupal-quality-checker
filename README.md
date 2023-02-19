@@ -5,13 +5,20 @@
 
 Provides set of libraries to easily setup code quality checks based on [GrumPHP](https://github.com/phpro/grumphp) for Drupal module/theme/profile. Check out this [Lullabot article](https://www.lullabot.com/articles/how-enforce-drupal-coding-standards-git) for more details.
 
->*Note:* This library aim to help contributed/custom Drupal module/theme/profile hosted in individual git repository.
+>*Note:* This library aim to help contributed/custom Drupal module/theme/profile hosted in individual git repository. Package requires php8.1 and Drupal 10.
 
 
 ## Install
 
-1. Add `mdarg1s/drupal-quality-checker` to `composer.json` or just `composer require --dev mdarg1s/drupal-quality-checker`
-2. Replace `grumphp.yml` in project's root directory (not Drupal root directory) with `vendor/mdarg1s/drupal-quality-checker/grumphp.yml.dist`
+1. Add to `composer.json` file in repositories section:
+  `
+  {
+    "type": "github",
+    "url": "https://github.com/mdarg1s/drupal-quality-checker"
+  }
+  `
+2. Add `mdarg1s/drupal-quality-checker` to `composer.json` or just `composer require --dev mdarg1s/drupal-quality-checker`
+3. Replace `grumphp.yml` in project's root directory (not Drupal root directory) with `vendor/mdarg1s/drupal-quality-checker/grumphp.yml.dist`
 
 That's it. Now, all tasks (listed below) run on every `git commit`.
 
